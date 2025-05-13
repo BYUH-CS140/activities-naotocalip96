@@ -12,19 +12,22 @@
   <header>
     <h1>How to Fold a Paper Airplane</h1>
     <nav>
-      <a href="#materials">Materials</a> | <a href="steps">Folding Steps</a> | <a href="#Tip">Tips</a>
+      <a href="#materials">Materials</a> | <a href="#steps"><!--Internal links must use #id-->Folding Steps</a> | <a href="#tips">Tips</a><!--#Tip didn't match actual section ID (tips is lowercase).-->
     </nav>
   </header>
   <section id="intro">
-    <h2>Introduction
+    <h2>Introduction</h2>
+      <!--Section was properly closed, but the comment was misleading.-->
       <p>Folding a paper airplane is easy and fun! Follow these steps to create your own airplane.</p>
       <img src="airplane.png" alt="Paper Airplane">
   </section>
-  <section id=materials>
+  <section id="materials">
+    <!--I added "" Mark for materials above-->
     <h2>Materials Needed</h2>
     <ul>
       <li>1 sheet of paper</li>
-      <l1>A flat surface to fold the paper</l1>
+      <li>A flat surface to fold the paper</li>
+      <!--I put <li> instead of <l1> for the tag above-->
     </ul>
   </section>
   <section id="steps">
@@ -36,19 +39,20 @@
       <li>Fold the top edges again to the center.</li>
       <li>Fold the plane in half lengthwise.</li>
       <li>Fold the wings down, matching the top edges of the wings with the bottom edge of the body.</li>
-      </ul>
+      </ol>
+    <!--The ordered list was incorrectly closed with </ul>.-->
   </section>
   <section id="tips">
     <h2>Extra Tips</h2>
     <ul>
       <li>Make sure your folds are as sharp as possible.</li>
       <li>This airplane has stiff wings and can tolerate fast throwing speeds.</li>
-    </ul>
-    <li>Throw it as hard as you can for maximum distance and speed.</li>
+      <li>Throw it as hard as you can for maximum distance and speed.</li>
+    </ul><!--All <li> items must be inside a list container.-->
   </section>
   <hr>
   <footer>
-    <a herf="www.foldnfly.com">Learn more about paper airplanes</a>
+    <a href="https://www.foldnfly.com"><!--Without protocol, link might not work as expected.-->Learn more about paper airplanes</a><!--	Common typo: herf → href.-->
     <p>&copy; 2024</p>
   </footer>
 </body>
