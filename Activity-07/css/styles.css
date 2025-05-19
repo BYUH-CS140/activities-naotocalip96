@@ -1,0 +1,36 @@
+
+    p {color: white;} 
+
+  
+    li {color: white;} 
+
+  
+    /* This style gives you a yellow background to highlighted content */ .highlight{background-color: blue;}
+
+  
+    #mainHeader {font-size: 30px; font-weight: bold;}
+
+    h1{text-align: center;}
+
+    /* Styling for the header title */
+    h1 {font-family: 'Arial Black', sans-serif;
+    color: #e8e3e3e9;
+    text-align: center;}
+
+    /* Highlight key points in the summary */
+    .highlight {background-color: #ffeb3b;
+    padding: 5px;font-style: italic;}
+
+
+    /* Style for the navigation links */
+    nav ul li a {text-decoration: none;
+    color: #2091f9;
+    background-color: #020612;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;}
+  
+    nav ul li a:hover {background-color: #87172a;}
+  
+
+   
