@@ -128,3 +128,7 @@ p,
 li {
   color: white; /* Consider revising to darker if used on white bg */
 }
+
+.video-frame {
+  border: none;
+}
