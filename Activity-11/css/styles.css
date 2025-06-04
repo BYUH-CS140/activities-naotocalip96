@@ -193,7 +193,7 @@
   }
   
   .grid-item:hover {
-    transform: scale (1.20);
+    transform: scale (1.2);
     background-color: #c22025;
   }
   .chapters-summary {
