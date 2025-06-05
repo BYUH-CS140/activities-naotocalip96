@@ -193,9 +193,10 @@
   }
   
   .grid-item:hover {
-    transform: scale (1.2);
+    transform: scale(1.2);
     background-color: #c22025;
   }
+
   .chapters-summary {
     display: flex;
     gap: 2rem;
