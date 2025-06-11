@@ -167,6 +167,7 @@
   }
   
   .grid-demo h2 {
+    text-align: center;
     font-size: 2rem;
     color: #ffcccb;
     margin-bottom: 1rem;
@@ -265,7 +266,7 @@
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 2000px) {
   body {
     display: grid;
     grid-template-areas:
