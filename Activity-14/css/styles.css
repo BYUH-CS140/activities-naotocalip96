@@ -52,7 +52,7 @@
 
   .nav-list {
     display: flex;
-    flex-direction: row; /* horizontal by default */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -246,10 +246,10 @@
     }
 
     .nav-list {
-        flex-direction: column;
+        flex-direction: column !important;
+        align-items: center;
       }
-    
-     .nav-list > li {
+      .nav-list > li {
         margin-bottom: 0.5rem;
       }
 
