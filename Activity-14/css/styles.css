@@ -249,6 +249,10 @@
         flex-direction: column; /* switch to vertical */
         align-items: center;
       }
+
+    .nav-list li {
+        margin-bottom: 1rem; /* spacing between buttons */
+      }
   
 
     body {
