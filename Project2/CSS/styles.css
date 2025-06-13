@@ -31,6 +31,20 @@
   }
 
 
+  .mount-fuji {
+    background-color: #297dc7e5;
+    border: 1px solid white;
+    padding: 60px;
+  }
+
+
+  .location-title {
+    background-color: #5f99da;
+    height: 70px;
+    font-size: 2.7rem;
+    line-height: 70px;
+  }
+
     .row {
         display: flex;
         flex-wrap: wrap;
