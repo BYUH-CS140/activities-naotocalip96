@@ -45,6 +45,23 @@
     line-height: 70px;
   }
 
+
+  .lake-biwa {
+    background-color: #cd8155;
+    border: 1px solid white;
+    padding: 60px;
+    text-align: center;
+  }
+
+
+  .section-heading {
+    background-color: #9975e7;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+
     .row {
         display: flex;
         flex-wrap: wrap;
