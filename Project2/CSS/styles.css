@@ -77,8 +77,37 @@
       .column img {
         width: 100%;
         max-width: 500;
+        border: 3px solid rgb(23, 27, 4); 
+        border-radius: 15px; 
+        box-shadow: 5px 5px 15px rgb(224, 139, 35);
+      }
+
+      .mount-fuji img {
+        width: 100%;
+        max-width: 500;
+        border: 3px solid rgb(23, 27, 4); 
+        border-radius: 15px; 
+        box-shadow: 5px 5px 15px rgb(58, 166, 196);
       }
       
+      .lake-biwa img {
+        width: 100%;
+        max-width: 500;
+        border: 3px solid rgb(23, 27, 4); 
+        border-radius: 15px; 
+        box-shadow: 5px 5px 15px rgb(185, 89, 37);
+      }
+
+      .ramen img {
+        width: 100%;
+        max-width: 500;
+        border: 3px solid rgb(23, 27, 4); 
+        border-radius: 15px; 
+        box-shadow: 5px 5px 15px rgb(224, 139, 35);
+      }
+
+
+
   
 
     h1 {
@@ -135,6 +164,9 @@
     background-color: #1ab7ec;
     padding: 8px 12px;
     border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    margin: 5%;
     transition: background-color 0.3s ease, transform 0.2s;}
   
   nav ul li a:hover {background-color: #dfd4d6;
@@ -193,19 +225,34 @@
 
 
 @media screen and (min-width: 1024px) {
-        .row {
-          flex-direction: row;
-          justify-content: space-between;
-        }
+  .row {
+  flex-direction: row;
+    justify-content: space-between;
+   }
       
-        .column, .column1, .column2 {
-          flex: 1;
-          padding: 15px;
-        }
+  .column, .column1, .column2 {
+  flex: 1;
+  padding: 15px;
+    }
       
-        nav ul {
-          justify-content: space-around;
-        }
+  nav ul {
+ justify-content: space-around;
+  }
+
+  body {
+    padding: 30px;
+  }
+
+  section {
+    padding: 50px;
+    margin: 50px auto;
+  }
+
+  nav ul li a {
+    margin: 0 15px;
+    padding: 10px 20px;
+  }
+
       }
 
 
