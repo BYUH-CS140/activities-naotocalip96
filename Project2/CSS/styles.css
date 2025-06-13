@@ -76,7 +76,7 @@
       
       .column img {
         width: 100%;
-        max-width: 500;
+        max-width: 100%;
         border: 3px solid rgb(23, 27, 4); 
         border-radius: 15px; 
         box-shadow: 5px 5px 15px rgb(224, 139, 35);
@@ -84,7 +84,7 @@
 
       .mount-fuji img {
         width: 100%;
-        max-width: 500;
+        max-width: 100%;
         border: 3px solid rgb(23, 27, 4); 
         border-radius: 15px; 
         box-shadow: 5px 5px 15px rgb(58, 166, 196);
@@ -92,7 +92,7 @@
       
       .lake-biwa img {
         width: 100%;
-        max-width: 500;
+        max-width: 100%;
         border: 3px solid rgb(23, 27, 4); 
         border-radius: 15px; 
         box-shadow: 5px 5px 15px rgb(185, 89, 37);
@@ -100,7 +100,7 @@
 
       .ramen img {
         width: 100%;
-        max-width: 500;
+        max-width: 100%;
         border: 3px solid rgb(23, 27, 4); 
         border-radius: 15px; 
         box-shadow: 5px 5px 15px rgb(224, 139, 35);
