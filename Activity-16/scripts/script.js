@@ -12,7 +12,10 @@ document.getElementById('randomColor').addEventListener('click', function() {
 
 function displayColor(color) {
     document.getElementById('displayArea').style.backgroundColor = color;
+    document.body.style.backgroundColor = color; // ← added line
+    document.getElementById('colorValue').textContent = color; // ← also for Part 2
 }
+
 
 function addToHistory(color) {
     let historyDiv = document.getElementById('paletteHistory');
@@ -30,3 +33,4 @@ function getRandomColor() {
     }
     return color;
 }
+
