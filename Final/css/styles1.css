@@ -25,12 +25,11 @@
   }
   
   #page-header {
-    background-image: url(".jpg");
     background-color: #e8c8a2;
     background-size: cover;
     background-position: center;
     color: #7b2e2e;
-    padding: auto;
+    padding: 1rem; /* ✅ Replaced 'auto' with valid padding */
     text-align: center;
   }
   
