@@ -92,7 +92,7 @@
         border-radius: 15px;
         box-shadow: 5px 5px 15px rgb(198, 87, 47);
         margin: 20px auto;
-        display: block;
+        display: flex;
       }
 
       .mount-fuji img {
@@ -225,7 +225,7 @@
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .nav-list {
     display: flex;
     flex-direction: row;
@@ -235,7 +235,7 @@
     gap: 1rem;
     }
     .row {
-        flex-direction: row;
+      flex-direction: row;
     }
 
     .column img {
