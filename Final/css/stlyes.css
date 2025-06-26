@@ -26,6 +26,13 @@
   padding: 60px;
   }
 
+  main img {max-width: 90%;
+    height: auto;
+    border: 3px solid rgb(23, 27, 4);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(198, 87, 47);
+    margin: 20px auto;}
+
   .sub-heading {
     background-color: #e79d75;
     height: 100%;
@@ -68,6 +75,8 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 4px;
+        max-width: 90%;
+        height: auto;
       }
       
       /* Create four equal columns that sits next to each other */
@@ -76,12 +85,15 @@
         min-width: 300px;
       }
       
-      .column img {max-width: 90%;
+      .column img {
+        max-width: 90%;
         height: auto;
         border: 3px solid rgb(23, 27, 4);
         border-radius: 15px;
         box-shadow: 5px 5px 15px rgb(198, 87, 47);
-        margin: 20px auto;}
+        margin: 20px auto;
+        display: block;
+      }
 
       .mount-fuji img {
         width: 100%;
@@ -213,7 +225,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .nav-list {
     display: flex;
     flex-direction: row;
@@ -225,6 +237,16 @@
     .row {
         flex-direction: row;
     }
+
+    .column img {
+        max-width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border: 3px solid rgb(23, 27, 4);
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgb(198, 87, 47);
+        display: block;
+      }
 }
 
 

@@ -15,85 +15,100 @@
         <div class="container"></div>
           <nav class="main-nav">
             <ul class="nav-list">
-              <li><a href="../Final Project/index.html">Home</a></li>
-              <li><a href="../Final Project/index1.html">Faith</a></li>
-              <li><a href="../Final Project/index2.html">Repentence</a></li>
-              <li><a href="../Final Project/index3.html">Baptism</a></li>
-              <li><a href="../Final Project/index4.html">Holy Ghost</a></li>
-              <li><a href="../Final Project/index5.html">Endure to the End</a></li>
-              <li><a href="../Final Project/game.html">Game</a></li>
+              <li><a href="../Final/index.html">Home</a></li>
+              <li><a href="../Final/index1.html">Faith</a></li>
+              <li><a href="../Final/index2.html">Repentance</a></li>
+              <li><a href="../Final/index3.html">Baptism</a></li>
+              <li><a href="../Final/index4.html">Holy Ghost</a></li>
+              <li><a href="../Final/index5.html">Endurence</a></li>
+              <li><a href="../Final/game.html">Game</a></li>
             </ul>
           </nav>
     </header> 
 
-  <main>
-
-
-    <section class="container chapters-summary">
-        <h2>🎮 Welcome to the Gospel Game!</h2>
-        <p>This page will feature a fun interactive game where you can test your knowledge of Jesus' teachings and the Gospel!</p>
-      </section>
-
-    <section class="container ai-game-section">
-        <h2>🧠 AI Game - Coming Soon!</h2>
-        <p>Our fun AI game is almost ready. You'll be able to answer questions and get fun feedback!</p>
-        <input type="text" placeholder="Ask a question..." />
-        <button>Submit</button>
-    </section>
-
-
-
-    <section class="pic">
-      <h3>Watch the video</h3>
-      <iframe class="pic video-frame"
-      width="560" 
-      height="315"
-      src=""
-      title=""
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-    </section>
-
-    <section class="floated-image-section container">
-        <h3>💖 Learn with Jesus</h3>
-        <img src="" alt="Jesus Christ" class="float-img" />
-        <p>
-          Jesus Christ taught us through stories and love. Soon, you’ll be able to learn through a game that’s fun and full of faith!
-        </p>
-      </section>
-
-    <section class="grid-demo container">
-        <h2>🎯 Fun Gospel Topics</h2>
-        <p>Just like Jesus helps us stay on track, our lessons snap into place like puzzle pieces!</p>
-        <div class="grid-container">
-          <div class="grid-item">📖 Faith</div>
-          <div class="grid-item">💧 Baptism</div>
-          <div class="grid-item">🎁 Holy Ghost</div>
-          <div class="grid-item">🔁 Repentance</div>
-          <div class="grid-item">🚶 Endurance</div>
-          <div class="grid-item">💬 Prayer</div>
-        </div>
-      </section>
-
-
-
-
-  </main>
-
-
-
-
-
+    <main>
+      <div class="quiz-game-container">
+        <h2>🧠 Jesus Quiz Time!</h2>
+        <p id="question-text">Loading question...</p>
+        <div id="answer-buttons" class="button-container"></div>
+        <p id="message"></p>
+        <button id="next-btn">Next Question</button>
+      </div>
+    </main>
   
-  <footer style="background-color: #4979ea;">
-    <blockquote cite="">
-        
-      </blockquote>
+    <script>
+      const questions = [
+        {
+          question: "What did Jesus teach us to do?",
+          answers: ["Love one another", "Be rich", "Eat candy", "Be lazy"],
+          correct: "Love one another"
+        },
+        {
+          question: "Where was Jesus born?",
+          answers: ["Bethlehem", "Nazareth", "Rome", "Jerusalem"],
+          correct: "Bethlehem"
+        },
+        {
+          question: "Who baptized Jesus?",
+          answers: ["John the Baptist", "Peter", "Paul", "Moses"],
+          correct: "John the Baptist"
+        },
+        {
+          question: "What did Jesus do for all of us?",
+          answers: ["Died and was resurrected", "Won a race", "Built a house", "Taught math"],
+          correct: "Died and was resurrected"
+        }
+      ];
+  
+      const questionText = document.getElementById("question-text");
+      const answerButtons = document.getElementById("answer-buttons");
+      const message = document.getElementById("message");
+      const nextBtn = document.getElementById("next-btn");
+  
+      let currentQuestionIndex = 0;
+  
+      function showQuestion() {
+        const current = questions[currentQuestionIndex];
+        questionText.textContent = current.question;
+        answerButtons.innerHTML = "";
+        message.textContent = "";
+  
+        current.answers.forEach(answer => {
+          const btn = document.createElement("button");
+          btn.textContent = answer;
+          btn.classList.add("answer-btn");
+          btn.addEventListener("click", () => checkAnswer(answer, current.correct));
+          answerButtons.appendChild(btn);
+        });
+      }
+  
+      function checkAnswer(selected, correct) {
+        if (selected === correct) {
+          message.textContent = "✅ Correct! Jesus loves you!";
+          message.style.color = "green";
+        } else {
+          message.textContent = "❌ Oops! Try again. Jesus believes in you!";
+          message.style.color = "red";
+        }
+      }
+  
+      nextBtn.addEventListener("click", () => {
+        currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
+        showQuestion();
+      });
+  
+      // Initialize the first question
+      showQuestion();
+    </script>
 
 
-    <p>Created by Naoto Calip &copy; 2025</p>
-  </footer>
 
-</body>
-</html>
+
+<footer>
+
+
+
+  <p>Created by Naoto Calip &copy; 2025</p>
+</footer>
+  </body>
+  </html>
