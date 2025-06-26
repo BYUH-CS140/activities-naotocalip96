@@ -319,6 +319,8 @@
     margin: 0 auto;
   }
 
+
+
   .quiz-game-container {
     text-align: center;
     max-width: 600px;
@@ -336,10 +338,11 @@
     font-size: 1rem;
     border-radius: 10px;
     background-color: #f7a072;
-    color: white;
+    color: rgb(238, 233, 233);
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    width: 45%;
   }
   
   .answer-btn:hover {
@@ -368,6 +371,9 @@
     margin-top: 15px;
   }
 
+  #question-text{
+    color: #171b04;
+  }
 
 
 
