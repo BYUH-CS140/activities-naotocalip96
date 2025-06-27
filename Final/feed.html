@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gospel of Jesus Christ</title>
+</head>
+<body>
+    <header id="page-header">
+      <h1 class="site-title">✨ Welcome to Jesus & Friends! ✨</h1> 
+        <div class="container"></div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="../Final/index.html">Home</a></li>
+              <li><a href="../Final/about.html">About</a></li>
+              <li><a href="../Final/game.html">Game</a></li>
+              <li><a href="../Final/feed.html">Feedback</a></li>
+            </ul>
+          </nav>
+    </header> 
+
+<main>
+<section>
+    <script>
+        // Create feedback form
+        const main = document.querySelector('main');
+        
+        const feedbackSection = document.createElement('section');
+        feedbackSection.id = 'feedback';
+        
+        const feedbackTitle = document.createElement('h2');
+        feedbackTitle.textContent = 'Feedback';
+        
+        const feedbackForm = document.createElement('form');
+        feedbackForm.id = 'feedback-form';
+        
+        const nameLabel = document.createElement('label');
+        nameLabel.for = 'name';
+        nameLabel.textContent = 'Name:';
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.id = 'name';
+        nameInput.name = 'name';
+        nameInput.required = true;
+        
+        const emailLabel = document.createElement('label');
+        emailLabel.for = 'email';
+        emailLabel.textContent = 'Email:';
+        const emailInput = document.createElement('input');
+        emailInput.type = 'email';
+        emailInput.id = 'email';
+        emailInput.name = 'email';
+        emailInput.required = true;
+        
+        const messageLabel = document.createElement('label');
+        messageLabel.for = 'message';
+        messageLabel.textContent = 'Message:';
+        const messageTextarea = document.createElement('textarea');
+        messageTextarea.id = 'message';
+        messageTextarea.name = 'message';
+        messageTextarea.required = true;
+        
+        const submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.textContent = 'Submit';
+        
+        // Append elements to form
+        feedbackForm.appendChild(nameLabel);
+        feedbackForm.appendChild(nameInput);
+        feedbackForm.appendChild(document.createElement('br'));
+        feedbackForm.appendChild(emailLabel);
+        feedbackForm.appendChild(emailInput);
+        feedbackForm.appendChild(document.createElement('br'));
+        feedbackForm.appendChild(messageLabel);
+        feedbackForm.appendChild(messageTextarea);
+        feedbackForm.appendChild(document.createElement('br'));
+        feedbackForm.appendChild(submitButton);
+        
+        // Append title and form to section
+        feedbackSection.appendChild(feedbackTitle);
+        feedbackSection.appendChild(feedbackForm);
+        
+        // Append section to main
+        main.appendChild(feedbackSection);
+        
+        // Add form submission event listener
+        feedbackForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          alert('Thank you for your feedback!');
+          feedbackForm.reset();
+        });
+        </script>
+        
+
+
+        <section id="feedback-section">
+            <!-- Feedback form will be inserted here by JavaScript -->
+          </section>
+        
+</section>
+
+</main>
+
+
+
+
+  <footer style="background-color: #4979ea;">
+    <blockquote cite="">
+        
+      </blockquote>
+
+
+    <p>Created by Naoto Calip &copy; 2025</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

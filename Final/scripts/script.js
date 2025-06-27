@@ -72,3 +72,76 @@ resetBtn.addEventListener("click", setupGame);
 
 // Initialize game
 setupGame();
+
+
+
+
+// js/script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the feedback section placeholder
+  const feedbackSection = document.getElementById('feedback-section');
+
+  // Create form elements
+  const form = document.createElement('form');
+  form.id = 'feedback-form';
+
+  // Name field
+  const nameLabel = document.createElement('label');
+  nameLabel.htmlFor = 'name';
+  nameLabel.textContent = 'Name: ';
+  const nameInput = document.createElement('input');
+  nameInput.type = 'text';
+  nameInput.id = 'name';
+  nameInput.name = 'name';
+  nameInput.required = true;
+
+  // Email field
+  const emailLabel = document.createElement('label');
+  emailLabel.htmlFor = 'email';
+  emailLabel.textContent = 'Email: ';
+  const emailInput = document.createElement('input');
+  emailInput.type = 'email';
+  emailInput.id = 'email';
+  emailInput.name = 'email';
+  emailInput.required = true;
+
+  // Message field
+  const messageLabel = document.createElement('label');
+  messageLabel.htmlFor = 'message';
+  messageLabel.textContent = 'Message: ';
+  const messageTextarea = document.createElement('textarea');
+  messageTextarea.id = 'message';
+  messageTextarea.name = 'message';
+  messageTextarea.required = true;
+
+  // Submit button
+  const submitButton = document.createElement('button');
+  submitButton.type = 'submit';
+  submitButton.textContent = 'Submit';
+
+  // Add elements to form
+  form.appendChild(nameLabel);
+  form.appendChild(nameInput);
+  form.appendChild(document.createElement('br'));
+
+  form.appendChild(emailLabel);
+  form.appendChild(emailInput);
+  form.appendChild(document.createElement('br'));
+
+  form.appendChild(messageLabel);
+  form.appendChild(messageTextarea);
+  form.appendChild(document.createElement('br'));
+
+  form.appendChild(submitButton);
+
+  // Add form to feedback section
+  feedbackSection.appendChild(form);
+
+  // Handle form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your feedback!');
+    form.reset();
+  });
+});
